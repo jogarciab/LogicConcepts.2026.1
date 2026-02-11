@@ -25,7 +25,7 @@ do
 
     do
     {
-        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]i, [N]o?: ", options);
+        answer = ConsoleExtennsion.GetValidOptions("¿Deseas continuar [S]i, [N]o?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
