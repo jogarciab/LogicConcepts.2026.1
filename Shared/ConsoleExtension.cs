@@ -1,6 +1,6 @@
 ﻿namespace Shared;
 
-public static class ConsoleExtennsion
+public static class ConsoleExtension
 {
     public static int GetInt(string message)
     {
