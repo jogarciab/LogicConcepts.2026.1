@@ -12,21 +12,20 @@ do
     {
         var discount = (float)pay * 0.10;
         var total = pay - (decimal)discount;
-        Console.WriteLine(total);
+        Console.WriteLine($"El valor a pagar es: {total}");
     }
     else if(desks >= 5 && desks < 10)
     {
         var discount = (float)pay * 0.20;
         var total = pay - (decimal)discount;
-        Console.WriteLine(total);
+        Console.WriteLine($"El valor a pagar es: {total}");
     }
     else if (desks >= 10)
     {
         var discount = (float)pay * 0.40;
         var total = pay - (decimal)discount;
-        Console.WriteLine(total);
+        Console.WriteLine($"El valor a pagar es: {total}");
     }
-
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]i, [N]o?: ", options);
