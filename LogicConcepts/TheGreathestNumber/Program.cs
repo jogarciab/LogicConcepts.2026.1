@@ -25,9 +25,22 @@ do
 
     do
     {
-        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]i, [N]o?: ", options);
-    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+        var year = ConsoleExtension.GetInt("Ingrese año: ");
 
-} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
-
-Console.WriteLine("Game Over");
+        if (year > 0)
+        {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                Console.WriteLine($"El año: {year}, SI es bisiesto");
+            }
+            else
+            {
+                Console.WriteLine($"El año: {year}, NO es bisiesto");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Ingrese un año válido, este es un año imposible de ejecutar");
+        }
+    }
+    while (true);
