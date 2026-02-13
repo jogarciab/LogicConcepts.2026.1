@@ -10,11 +10,11 @@ do
 
     if (a % b == 0)
     {
-        Console.WriteLine($"El número: {b}, es múltiplo de: {a}");
+        Console.WriteLine($"El número: {a}, es múltiplo de: {b}");
     }
-    else if (a % b != 0)
+    else
     {
-        Console.WriteLine($"El número: {b}, no es múltiplo de: {a}");
+        Console.WriteLine($"El número: {a}, no es múltiplo de: {b}");
     }
 
     do
