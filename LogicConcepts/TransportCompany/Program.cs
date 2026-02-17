@@ -28,20 +28,20 @@ do
     var sure = GetSurePayment(driverIncome);
     var fuel = GetFuelPayment(route, weightPassengers);
     var deductions = GetDeductions(assitant, sure, fuel);
-    var total = passenger + parcelsPayment - deductions;
+    var total = driverIncome - deductions;
 
     Console.WriteLine("*** CALCULOS ***");
-    Console.WriteLine($"Ingresos por Pasajeros.........................: {passenger:C2}");
-    Console.WriteLine($"Ingresos por Encomiendas.......................: {parcelsPayment:C2}");
+    Console.WriteLine($"Ingresos por Pasajeros.........................: {passenger,20:C2}");
+    Console.WriteLine($"Ingresos por Encomiendas.......................: {parcelsPayment,20:C2}");
     Console.WriteLine("                                               :__________");
-    Console.WriteLine($"TOTAL INGRESOS.................................: {driverIncome:C2}");
-    Console.WriteLine($"Pago Ayudante..................................: {assitant:C2}");
-    Console.WriteLine($"Pago Seguro....................................: {sure:C2}");
-    Console.WriteLine($"Pago Combustible...............................: {fuel:C2}");
+    Console.WriteLine($"TOTAL INGRESOS.................................: {driverIncome,20:C2}");
+    Console.WriteLine($"Pago Ayudante..................................: {assitant,20:C2}");
+    Console.WriteLine($"Pago Seguro....................................: {sure,20:C2}");
+    Console.WriteLine($"Pago Combustible...............................: {fuel,20:C2}");
     Console.WriteLine("                                               :__________");
-    Console.WriteLine($"TOTAL DEDUCCIONES..............................: {deductions:C2}");
+    Console.WriteLine($"TOTAL DEDUCCIONES..............................: {deductions,20:C2}");
     Console.WriteLine("                                               :__________");
-    Console.WriteLine($"TOTAL A LIQUIDAR...............................: {total:C2}");
+    Console.WriteLine($"TOTAL A LIQUIDAR...............................: {total,20:C2}");
 
     do
     {
