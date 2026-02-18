@@ -38,7 +38,9 @@
   <Folder Name="/13/">
     <Project Path="Factorial/Factorial.csproj" Id="b11dffdd-4202-4fac-b538-fef01af717ea" />
   </Folder>
-  <Folder Name="/14/" />
+  <Folder Name="/14/">
+    <Project Path="SeriesTaylor/SeriesTaylor.csproj" Id="ae682a63-2bf5-48e9-a65e-3b457ce1711e" />
+  </Folder>
   <Folder Name="/15/" />
   <Folder Name="/Shared/">
     <Project Path="../Shared/Shared.csproj" Id="6a3ad66e-c590-4d3d-b5ea-2b9f11ba33c3" />
