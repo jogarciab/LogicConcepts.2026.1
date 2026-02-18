@@ -35,7 +35,9 @@
   <Folder Name="/12/">
     <Project Path="NumbersSeries/NumbersSeries.csproj" Id="3157ccae-6fff-48f6-b624-743b5e6641d6" />
   </Folder>
-  <Folder Name="/13/" />
+  <Folder Name="/13/">
+    <Project Path="Factorial/Factorial.csproj" Id="b11dffdd-4202-4fac-b538-fef01af717ea" />
+  </Folder>
   <Folder Name="/14/" />
   <Folder Name="/15/" />
   <Folder Name="/Shared/">
